@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+        body{
+            font-size: 16px;
+            line-height: 1.6;
+            width: 100%;
+            margin:0px;
+            background-color: rgb(237, 239, 240);
+        }
+        #wrapper{
+            max-width: 1100px;
+            margin:0px auto;
+            
+        }
+        .nav-tabs{
+            display: flex;
+            list-style: none;
+            border: 1px solid rgba(0,0,0,0.8);
+            background-color: rgba(67, 64, 63); 
+            overflow: hidden;
+        
+        }
+        .tabs button {
+            background-color: inherit;
+            color:#eee;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 22px;
+            transition: 0.2s;
+            
+        }
+        .tabs button:hover {
+            background-color: rgb(168, 160, 160);
+        }
+        .tabs button.active {
+            background-color: rgb(8, 7, 7);
+        }
+        .name{
+           
+            float:right;
+            font-size: 20px;
+            
+        }
+        .name img{
+            padding:5px 40px;
+            border-radius: 70%;
+            
+        }
+        h1{
+            font-size: 25px;
+            padding-left:40px;
+            
+        }
+        h3{
+            padding: 8px 39px;
+            border-radius: 1px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table tr:nth-child(odd){
+            background-color:#eee;
+        }
+        table tr:nth-child(even){
+            background-color:white;
+        }
+        table tr:nth-child(1){
+            background-color:rgb(135, 155, 235);
+        }
+        .tabcontent{
+            padding-top: 50px;
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+            max-width: 1100px;
+            margin:0px auto;
+        }
+        .imgstyle img{
+            width: 600px;
+            padding: 30px 200px;
+        }
+        .pr p{
+            text-indent: 30px;
+            padding-left:30px;
+        }
+        .infor{
+            float:right;
+            padding-right: 30px;
+            
+        }
+        .bottom{
+            border-top:1px solid rgb(0, 0, 0);
+            margin-top:80px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .column {
+            flex: 50%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            width: 50px;
+            height: 40px;
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        .youtube{
+            text-align: center;
+        }
+        .guitar{
+            padding-left: 300px;
+            width: 500px;
+        }
+        #Educational{
+            overflow: auto;
+        }
+    </style>
+    <title>自己紹介</title>
+</head>
+<body>
+
+<div class="top">
+    <h1>自己紹介</h1>
+    <div class ="tabs">
+        <div class = "nav-tabs">
+           <button class = "tablinks" onclick = "opentab (event,'Educational')">学歴・職歴</button>
+           <button class = "tablinks" onclick = "opentab (event,'Language skill')">語学力</button>
+           <button class = "tablinks" onclick = "opentab (event,'PR')">自己ＰＲ</button>
+           <button class = "tablinks" onclick = "opentab (event,'work')">成果物</button>
+        </div>
+    </div>
+    
+</div>
+
+<div id="wrapper">
+<div id = "Educational" class="tabcontent">
+    <div class="name">
+    <p>名前:Man Xuan Dat<br>
+    生年月日:1999年7月21日<br>
+    出身:ベトナム<br>
+    <img src ="dat.JPG" style="width:150px;">
+    </p>
+    </div>
+    <table border="1">
+        <tr>
+            <th>西暦</th>
+            <th>月</th>
+            <th>学歴･職歴</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td style =" text-align: center;">学歴</td>
+        </tr>
+        <tr>
+            <td>2014</td>
+            <td>9</td>
+            <td><a href = "https://www.thpthiephoa3.edu.vn/" target="_bank">HIEP HOA S0 3 高等学校 入学</a></td>
+        </tr>
+        <tr>
+            <td>2017</td>
+            <td>7</td>
+            <td>HIEP HOA SO 3 高等学校  卒業</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td style =" text-align: center;">来日</td>
+        </tr>
+        <tr>
+            <td>2017</td>
+            <td>10</td>
+            <td><a href ="http://www.wls.co.jp/yokohama.html" target = "_bank">早稲田言語学院横浜校 入学</a></td>
+        </tr>
+        <tr>
+            <td> 2019</td>
+            <td>3</td>
+            <td>早稲田言語学院横浜校 卒業</td>
+        </tr>
+        <tr>
+            <td>2019</td>
+            <td>4</td>
+            <td><a href ="https://www.icb.ac.jp/" target = "_bank">岩谷学園テクノビジネス横浜保育専門学校 日本語研究科　入学</a></td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>3</td>
+            <td>岩谷学園テクノビジネス横浜保育専門学校 日本語研究科　卒業　</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>4</td>
+            <td><a href ="https://www.arts-college.yokohama/" target = "_bank">学校法人情報文化学園アーツカレッジヨコハマ　国際情報ビジネス学科　入学</a></td>
+        </tr>
+        <tr>
+            <td>2022</td>
+            <td>3</td>
+            <td>学校法人情報文化学園アーツカレッジヨコハマ　国際情報ビジネス学科　卒業見込み</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td style =" text-align: center;">職歴</td>
+        </tr>
+        <tr>
+            <td>2018</td>
+            <td>9</td>
+            <td><a href="https://retty.me/area/PRE14/ARE35/SUB3201/100000818044/" target="_bank">スシロー　新横浜店　アルバイト開始　(キッチン、ホール)</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>    
+
+<div id = "Language skill" class = "tabcontent">
+    <h3>日本語力</h3>
+    <div class="imgstyle">
+        <details>
+            <summary>2020年12月日本語能力試験(JLPT)結果</summary>
+                <img src="jlpt.JPG" style="width: 600px;"><br>
+                <p>読解力が苦手だったので<b>SmartNews</b>アプリなどニュースを読んだり、しました。。</p>
+                <p>結果は2021年12月に<a href ="https://www.sikaku.gr.jp/c/pjc/"><b>PJC試験</b></a>が<b>合格</b>しました。</p>
+                <iframe src = "https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=29092ea473&attid=0.1&permmsgid=msg-f:1721811165778680342&th=17e51a21fa8a1a16&view=att&disp=inline&realattid=17e51a141498a2b42561&saddbat=ANGjdJ_xcD9BYTS6RhP3tAiTV4JNgNwD78u45RIfqx9FryECZB068fmPPNjlaQBOMx89iGY3rl8J7MEnmWf_b1OBol3MbPFQaMqQCqpsY_ov-3mnF1QvLONecvCvO53_GSW07FXDIGa9pmKhKFluRScA3QpmoBacK0noSBcfQ4VAf1nzL_VaWBtkxYzWAvE5EqSin80VA6sup5MlrfI0Ojkgag7DSlCr7Ursh-aENOeZYlBwjUX5O6dpITTLyus9GP5diAdr5IB533hGkiWZc3HHJSVJpYRtfL9AcDYbeDHj3TunFgDYTTLlOm0AdlTyb0zXQN7ShuY-8W7plS__UfBTj_gdgul6ZwR2pONg7vtsuOTz7YR_IgL3t0J2u75MqWqGW5c8knkzJKpAVMv4Q0COTypKXcQBUX7g1QHU8ZyK1UQSVwjAA8gpy6_FMehbAIWT7otfyML7kXS3g1UIpP1uWQ-XGLjA5meIMdtVX0SnGEt6fBqcqdXgLxqSuLd_niCeip0hI558qs1xjku6t2xgUx0SmTM9tcizaOJX0JJp6LA6RgV4YQNXfk1gImKc2ShjsOiwW6snYe6QxXq7R7BtVoprVCUFtLse8deZCwMZRd-bBTeL1lf00yBineSzkvn0qtLLwVUgBHE0h4wKJLxCnBdv7mi1kP8DoF33MpLGMU2y4vK7Y2bVTWNAb1w"width="1100px" height="700px"></iframe>
+        </details>
+        <details>
+            <summary>タイピング力</summary>
+            <img src="type.JPG" style="width: 800px;" type="application/pdf">
+        </details>
+    </div>
+    
+</div>
+
+<div id = "PR" class = "tabcontent">
+    <h3>長所</h3>
+    <p>
+        私の得意分野はスポーツです。サッカーが好きです。なぜかというとサッカーはチームワークが必要です。だからこそそれぞれの人の得手不得手を理解し、
+        その人の立場に立って考えたり戦略を立てたりするのが得意です。それ上体がより活発になり、考え方や視野も広がっていきます。
+        会社でもチーム全体の仕事のことを考えて働ける人物として貢献したいと思っています。
+    </p>
+    <h3>得意科目</h3>
+    <p>
+        アルバイトで働く仲間から「優しいですね」とよく言われています。「どうしてですか」と聞くと「自分が忙しのに他の人も手伝ってあげたり、
+        仕事がやり方をわからない人に教えてあげたりするから」という答えでした。自分ではよくわかりませんが、少し考えてみると他の人の立場に立って考えたり、
+        行動していることに気が付きました。職場でお客様のことを一番に考えて行動することが大事だと思います。このポイントは私の長所だと思います。
+    </p>
+    <h3>趣味</h3>
+    <h4>-サッカーをすることと</h4>
+        <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v6NjzBRLc5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    <h4>-ギターを弾くことと</h4>
+        <img src="guitar.JPG" alt="guitar" class ="guitar">
+    <h4>-写真を撮ること</h4>
+        <div class = "row">
+          <div class = " column">
+            <a href ="https://photos.google.com/share/AF1QipNryAQhTs1H6VriemNHZI1zm3V9wjiplwq_sJELPWFQpqIMOjYuqyte1JZfKVFwzA?key=OFAzVDViUXRaUHAxRGpDd0oxTERhX1Z2YmdvWkNB" target="blank">写真を見るためここにクリックしてください！</a>
+        </div>
+    
+</div>
+</div>
+<div id ="work" class ="tabcontent">
+    <p>後輩達に役立つものを作りました。<a href = "http://153.126.183.193/~k207024/login.php" target="blank">ここにクリック</a></p>
+    
+</div>
+
+<div class = "bottom">
+<p style="padding-left:30px">
+By: Man Xuan Dat<br>
+Gmail: manxuandat217@gmail.com
+</p>
+    <div class = "infor">           
+        <a href = "https://www.facebook.com/xuandat.man" target="_bank"><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a>
+        <a href = "https://www.instagram.com/datt0000000/" target="_bank"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+    </div>
+</div>
+</div>
+<script>
+    function opentab(evt, option) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(option).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+</script>
+
+</body>
+</html>
